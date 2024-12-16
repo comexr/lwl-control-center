@@ -18,7 +18,7 @@
  */
 export interface ITuxedoIOAPI {
     /**
-     * Gets information about the tuxedo-cc-wmi module
+     * Gets information about the lwl-cc-wmi module
      *
      * @param info Structure to fill with data
      * @returns True if successful, false otherwise

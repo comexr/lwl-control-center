@@ -220,9 +220,9 @@ export class TuxedoControlCenterDaemon extends SingleProcess {
                 const modInfo = new ModuleInfo();
                 if (TuxedoIOAPI.wmiAvailable()) {
                     TuxedoIOAPI.getModuleInfo(modInfo);
-                    this.logLine('tuxedo-io ver ' + modInfo.version + ' [ interface: ' + modInfo.activeInterface + ' ]');
+                    this.logLine('lwl-io ver ' + modInfo.version + ' [ interface: ' + modInfo.activeInterface + ' ]');
                 } else {
-                    this.logLine('No tuxedo-io found on start');
+                    this.logLine('No lwl-io found on start');
                 }
             }
         } else if (process.argv.includes('--stop')) {

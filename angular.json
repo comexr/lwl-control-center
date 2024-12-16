@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tuxedo-control-center": {
+    "lwl-control-center": {
       "projectType": "application",
       "i18n": {
           "locales": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/tuxedo-control-center/ng-app",
+            "outputPath": "dist/lwl-control-center/ng-app",
             "index": "src/ng-app/index.html",
             "main": "src/ng-app/main.ts",
             "polyfills": "src/ng-app/polyfills.ts",
@@ -78,18 +78,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "tuxedo-control-center:build"
+            "browserTarget": "lwl-control-center:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "tuxedo-control-center:build:production"
+              "browserTarget": "lwl-control-center:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tuxedo-control-center:build"
+            "browserTarget": "lwl-control-center:build"
           }
         },
         "test": {
@@ -126,15 +126,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "tuxedo-control-center:serve"
+            "devServerTarget": "lwl-control-center:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "tuxedo-control-center:serve:production"
+              "devServerTarget": "lwl-control-center:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "tuxedo-control-center"
+  "defaultProject": "lwl-control-center"
 }

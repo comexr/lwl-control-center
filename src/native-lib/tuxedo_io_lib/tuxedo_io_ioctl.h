@@ -1,9 +1,9 @@
 /*!
  * Copyright (c) 2019-2022 TUXEDO Computers GmbH <tux@tuxedocomputers.com>
  *
- * This file is part of tuxedo-io.
+ * This file is part of lwl-io.
  *
- * tuxedo-io is free software: you can redistribute it and/or modify
+ * lwl-io is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
  * the Free Software Foundation, either version 3 of the License, or
  * (at your option) any later version.

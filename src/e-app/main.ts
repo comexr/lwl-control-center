@@ -35,7 +35,7 @@ import electron = require("electron");
 const appPath = __dirname.replace('app.asar/', '');
 
 const autostartLocation = path.join(os.homedir(), '.config/autostart');
-const autostartDesktopFilename = 'tuxedo-control-center-tray.desktop';
+const autostartDesktopFilename = 'lwl-control-center-tray.desktop';
 const tccConfigDir = path.join(os.homedir(), '.tcc');
 const tccStandardConfigFile = path.join(tccConfigDir, 'user.conf');
 const availableLanguages = [
@@ -55,7 +55,7 @@ let aquarisWindow: Electron.BrowserWindow;
 let webcamWindow: Electron.BrowserWindow;
 let primeWindow: Electron.BrowserWindow;
 
-const tray: TccTray = new TccTray(path.join(__dirname, '../../data/dist-data/tuxedo-control-center_256.png'));
+const tray: TccTray = new TccTray(path.join(__dirname, '../../data/dist-data/lwl-control-center_256.png'));
 let tccDBus: TccDBusController;
 
 const watchOption = process.argv.includes('--watch');
@@ -302,7 +302,7 @@ function createAquarisControl(langId: string) {
         resizable: true,
         minWidth: windowWidth,
         minHeight: windowHeight,
-        icon: path.join(__dirname, '../../data/dist-data/tuxedo-control-center_256.png'),
+        icon: path.join(__dirname, '../../data/dist-data/lwl-control-center_256.png'),
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false
@@ -347,7 +347,7 @@ async function createWebcamPreview(langId: string, arg: any) {
         minHeight: windowHeight,
         icon: path.join(
             __dirname,
-            "../../data/dist-data/tuxedo-control-center_256.png"
+            "../../data/dist-data/lwl-control-center_256.png"
         ),
         webPreferences: {
             nodeIntegration: true,
@@ -446,7 +446,7 @@ async function createPrimeWindow(langId: string, primeSelectMode: string) {
         minHeight: windowHeight,
         icon: path.join(
             __dirname,
-            "../../data/dist-data/tuxedo-control-center_256.png"
+            "../../data/dist-data/lwl-control-center_256.png"
         ),
         webPreferences: {
             nodeIntegration: true,
@@ -548,7 +548,7 @@ async function createTccWindow(langId: string, module?: string) {
         resizable: true,
         minWidth: windowWidth,
         minHeight: windowHeight,
-        icon: path.join(__dirname, '../../data/dist-data/tuxedo-control-center_256.png'),
+        icon: path.join(__dirname, '../../data/dist-data/lwl-control-center_256.png'),
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,

@@ -136,7 +136,7 @@ export class FanControlWorker extends DaemonWorker {
     public onExit(): void {
         if (this.getFanControlStatus()) {
             ioAPI.setFansAuto(); // required to avoid high fan speed on wakeup for certain devices
-            ioAPI.setEnableModeSet(false); //FIXME Dummy function, tuxedo-io always sets the manual bit
+            ioAPI.setEnableModeSet(false); //FIXME Dummy function, lwl-io always sets the manual bit
         }
 
         if (this.platformAvailable) {
@@ -209,7 +209,7 @@ export class FanControlWorker extends DaemonWorker {
         const useFanControl = this.getFanControlStatus();
 
         if (useFanControl) {
-            ioAPI.setEnableModeSet(true); // FIXME Dummy function, tuxedo-io always sets the manual bit
+            ioAPI.setEnableModeSet(true); // FIXME Dummy function, lwl-io always sets the manual bit
         }
     }
 
@@ -225,7 +225,7 @@ export class FanControlWorker extends DaemonWorker {
         const nrFans = ioAPI.getNumberFans();
 
         if (this.fans === undefined || this.fans.size !== nrFans) {
-            console.log("Using tuxedo-io");
+            console.log("Using lwl-io");
             this.mapLogicToFans(nrFans);
         }
 

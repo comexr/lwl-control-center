@@ -374,7 +374,7 @@ export class AquarisControlComponent implements OnInit, AfterContentInit, OnDest
         }
     }
 
-    public aquarisInfoUrlHref = $localize `:@@aqDialogConnectLinkHref:https\://www.tuxedocomputers.com/en/TUXEDO-Aquaris.tuxedo`;
+    public aquarisInfoUrlHref = $localize `:@@aqDialogConnectLinkHref:https\://www.tuxedocomputers.com/en/lwl-Aquaris.tuxedo`;
 
     public async buttonConnect(deviceUUID: string) {
         if (deviceUUID === undefined) {
@@ -427,7 +427,7 @@ export class AquarisControlComponent implements OnInit, AfterContentInit, OnDest
                 title: $localize `:@@aqDialogDisconnectTitle:Do you want to disconnect your Aquaris?`,
                 description: $localize `:@@aqDialogDisconnectDescription:Please ensure to follow our instructions carefully in case you want to unplug your Aquaris from your TUXEDO.`,
                 linkLabel: $localize `:@@aqDialogDisconnectLinkLabel:Instructions`,
-                linkHref: $localize `:@@aqDialogDisconnectLinkHref:https\://www.tuxedocomputers.com/en/TUXEDO-Aquaris.tuxedo`,
+                linkHref: $localize `:@@aqDialogDisconnectLinkHref:https\://www.tuxedocomputers.com/en/lwl-Aquaris.tuxedo`,
                 buttonAbortLabel: $localize `:@@aqDialogButtonAbortLabel:Stay connected`,
                 buttonConfirmLabel: $localize `:@@aqDialogButtonConfirmLabel:Disconnect`,
                 checkboxNoBotherLabel: $localize `:@@aqDialogCheckboxNoBotherLabel:Don't ask again`,

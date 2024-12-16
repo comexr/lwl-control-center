@@ -1518,8 +1518,8 @@ Commercial register number - Part B of the commercial register - 27755
         </context-group>
       </trans-unit>
       <trans-unit id="cKeyboardBacklightNotSupported" datatype="html">
-        <source>Your device has no keyboard backlight, is not (yet) supported by this control interface, or the driver is too old. At least tuxedo-keyboard 3.2.0 or tuxedo-keyboard-ite 0.3.0 respectively and Linux kernel 5.9 are required for most devices (some devices need newer versions). If you are using Ubuntu 20.04 or earlier or an old version of TUXEDO OS based on it, these driver versions do not get installed automatically.</source>
-        <target state="translated">Your device has no keyboard backlight, is not (yet) supported by this control interface, or the driver is too old. At least tuxedo-keyboard 3.2.0 or tuxedo-keyboard-ite 0.3.0 respectively and Linux kernel 5.9 are required for most devices (some need newer versions). If you are using Ubuntu 20.04 or earlier or an old version of TUXEDO OS based on it, these driver versions do not get installed automatically.</target>
+        <source>Your device has no keyboard backlight, is not (yet) supported by this control interface, or the driver is too old. At least lwl-keyboard 3.2.0 or lwl-keyboard-ite 0.3.0 respectively and Linux kernel 5.9 are required for most devices (some devices need newer versions). If you are using Ubuntu 20.04 or earlier or an old version of TUXEDO OS based on it, these driver versions do not get installed automatically.</source>
+        <target state="translated">Your device has no keyboard backlight, is not (yet) supported by this control interface, or the driver is too old. At least lwl-keyboard 3.2.0 or lwl-keyboard-ite 0.3.0 respectively and Linux kernel 5.9 are required for most devices (some need newer versions). If you are using Ubuntu 20.04 or earlier or an old version of TUXEDO OS based on it, these driver versions do not get installed automatically.</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/ng-app/app/keyboard-backlight/keyboard-backlight.component.html</context>
           <context context-type="linenumber">47,51</context>
@@ -1796,8 +1796,8 @@ Commercial register number - Part B of the commercial register - 27755
         </context-group>
       </trans-unit>
       <trans-unit id="aqDialogConnectLinkHref" datatype="html">
-        <source>https://www.tuxedocomputers.com/en/TUXEDO-Aquaris.tuxedo</source>
-        <target state="translated">https://www.tuxedocomputers.com/en/TUXEDO-Aquaris.tuxedo</target>
+        <source>https://www.tuxedocomputers.com/en/lwl-Aquaris.tuxedo</source>
+        <target state="translated">https://www.tuxedocomputers.com/en/lwl-Aquaris.tuxedo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/ng-app/app/aquaris-control/aquaris-control.component.ts</context>
           <context context-type="linenumber">375</context>
@@ -1904,8 +1904,8 @@ Commercial register number - Part B of the commercial register - 27755
         </context-group>
       </trans-unit>
       <trans-unit id="aqDialogDisconnectLinkHref" datatype="html">
-        <source>https://www.tuxedocomputers.com/en/TUXEDO-Aquaris.tuxedo</source>
-        <target state="translated">https://www.tuxedocomputers.com/en/TUXEDO-Aquaris.tuxedo</target>
+        <source>https://www.tuxedocomputers.com/en/lwl-Aquaris.tuxedo</source>
+        <target state="translated">https://www.tuxedocomputers.com/en/lwl-Aquaris.tuxedo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/ng-app/app/aquaris-control/aquaris-control.component.ts</context>
           <context context-type="linenumber">428</context>
@@ -2685,8 +2685,8 @@ Commercial register number - Part B of the commercial register - 27755
         </context-group>
       </trans-unit>
       <trans-unit id="chargingProfilesInfoLinkHref" datatype="html">
-        <source>https://www.tuxedocomputers.com/en/Battery-charging-profiles-inside-the-TUXEDO-Control-Center.tuxedo</source>
-        <target state="translated">https://www.tuxedocomputers.com/en/Battery-charging-profiles-inside-the-TUXEDO-Control-Center.tuxedo</target>
+        <source>https://www.tuxedocomputers.com/en/Battery-charging-profiles-inside-the-lwl-Control-Center.tuxedo</source>
+        <target state="translated">https://www.tuxedocomputers.com/en/Battery-charging-profiles-inside-the-lwl-Control-Center.tuxedo</target>
         <context-group purpose="location">
           <context context-type="sourcefile">src/ng-app/app/charging-settings/charging-settings.component.ts</context>
           <context context-type="linenumber">91</context>

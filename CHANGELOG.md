@@ -66,7 +66,7 @@
 - Issue in on-demand mode keeping dGPU awake in certain cases even
   after closing dashboard/GUI
 - Minor performance improvement fixes
-- Occasional crash on reload provoked through tuxedo-driver
+- Occasional crash on reload provoked through lwl-driver
   package update
 - Occasional race condition stability fix when GUI loading before the tccd DBus
   is initialized (manifesting as missing profiles in tray menu)
@@ -450,8 +450,8 @@
 
 ## [1.0.8] - 2020-12-11
 ### Changed
-- Now uses interface from the `tuxedo-io` module in `tuxedo-keyboard` package instead of `tuxedo-cc-wmi`
-- As of the transition to `tuxedo-io` newer devices like the *InfinityBook S 14 Gen6* are supported as well
+- Now uses interface from the `lwl-io` module in `lwl-keyboard` package instead of `lwl-cc-wmi`
+- As of the transition to `lwl-io` newer devices like the *InfinityBook S 14 Gen6* are supported as well
 
 ### Fixed
 - Fan control fail when tccd loads before kernel interface module
@@ -525,7 +525,7 @@
 
 ## [0.9.1] - 2020-03-30
 ### Changed
-- Renaming adjustments of tuxedo-wmi -> tuxedo-cc-wmi
+- Renaming adjustments of lwl-wmi -> lwl-cc-wmi
 
 ## [0.9.0] - 2020-03-26
 ### Added
@@ -550,7 +550,7 @@
 
 ## [0.8.0] - 2020-03-06
 ### Added / Changed
-- New control through tuxedo-wmi module
+- New control through lwl-wmi module
 - Most of the new design implemented
 
 ## [0.7.4] - 2019-12-09

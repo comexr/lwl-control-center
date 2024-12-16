@@ -90,7 +90,7 @@ export class TomteGuiComponent implements OnInit {
         // only check version once and then store it?
         this.showRetryButton = false;
         this.loadingInformation = true;
-        this.tomteIsInstalled = await this.pmgs.isInstalled("tuxedo-tomte");
+        this.tomteIsInstalled = await this.pmgs.isInstalled("lwl-tomte");
         if (this.tomteIsInstalled)
             {
                 await this.tomteListJson();
@@ -103,7 +103,7 @@ export class TomteGuiComponent implements OnInit {
         // retries to list the information a couple of times, this is only triggered if tomte is already running.
         for (let i = 0; i < 30; i++)
         {
-            let command = "tuxedo-tomte listjson"
+            let command = "lwl-tomte listjson"
             let results
             try
             {
@@ -173,7 +173,7 @@ export class TomteGuiComponent implements OnInit {
                 {
                     continue;
                 }
-                let command = "LANGUAGE=" + this.utils.getCurrentLanguageId() + " tuxedo-tomte description " + modulename;
+                let command = "LANGUAGE=" + this.utils.getCurrentLanguageId() + " lwl-tomte description " + modulename;
                 try
                 {
                     let results = await this.utils.execCmdAsync(command);
@@ -332,9 +332,9 @@ export class TomteGuiComponent implements OnInit {
             this.utils.pageDisabled = false;
             return;
         }
-        let command1 = "pkexec tuxedo-tomte AUTOMATIC";
-        let command2 = "pkexec tuxedo-tomte unblock all";
-        let command3 = "pkexec tuxedo-tomte reconfigure all";
+        let command1 = "pkexec lwl-tomte AUTOMATIC";
+        let command2 = "pkexec lwl-tomte unblock all";
+        let command3 = "pkexec lwl-tomte reconfigure all";
         let res1;
         let res2;
         let res3;
@@ -380,7 +380,7 @@ export class TomteGuiComponent implements OnInit {
         }
         if (isInstalled)
         {
-            let command = "yes | pkexec tuxedo-tomte remove " + name;
+            let command = "yes | pkexec lwl-tomte remove " + name;
 
             let results = await this.utils.execCmdAsync(command).catch((err) => {
                 console.error(err);
@@ -392,7 +392,7 @@ export class TomteGuiComponent implements OnInit {
         else
         {
 
-            let command = "pkexec tuxedo-tomte configure " + name;
+            let command = "pkexec lwl-tomte configure " + name;
 
             let results = await this.utils.execFile(command).catch((err) => {
                 console.error(err);
@@ -419,10 +419,10 @@ export class TomteGuiComponent implements OnInit {
             return;
         }
         this.utils.pageDisabled = true;
-        let command = "pkexec tuxedo-tomte block " + name;
+        let command = "pkexec lwl-tomte block " + name;
         if (isBlocked)
         {
-            command = "pkexec tuxedo-tomte unblock " + name ;
+            command = "pkexec lwl-tomte unblock " + name ;
         }
         let results = await this.utils.execFile(command).catch((err) => {
             console.error(err);
@@ -448,7 +448,7 @@ export class TomteGuiComponent implements OnInit {
             return;
         }
         this.utils.pageDisabled = true;
-        let command = "pkexec tuxedo-tomte " + mode.value ;
+        let command = "pkexec lwl-tomte " + mode.value ;
         let results = await this.utils.execFile(command).catch((err) => {
             console.error(err);
             this.utils.pageDisabled = false;
@@ -466,7 +466,7 @@ export class TomteGuiComponent implements OnInit {
     public async installTomteButton()
     {
         this.utils.pageDisabled = true;
-        let gotInstalled = await this.pmgs.install("tuxedo-tomte");
+        let gotInstalled = await this.pmgs.install("lwl-tomte");
         if (!gotInstalled)
         {
             this.throwErrorMessage($localize `:@@tomteGuiInstallErrorMessagePopup:Tomte failed to install. Do you use a tuxedo device and are using the tuxedo repos?`);

@@ -88,7 +88,7 @@ export class ChargingSettingsComponent implements OnInit, OnDestroy {
     public chargingPriorityLabels: Map<string, string> = new Map();
     public chargingPriorityDescriptions: Map<string, string> = new Map();
 
-    public chargingProfilesUrlHref = $localize `:@@chargingProfilesInfoLinkHref:https\://www.tuxedocomputers.com/en/Battery-charging-profiles-inside-the-TUXEDO-Control-Center.tuxedo`;
+    public chargingProfilesUrlHref = $localize `:@@chargingProfilesInfoLinkHref:https\://www.tuxedocomputers.com/en/Battery-charging-profiles-inside-the-lwl-Control-Center.tuxedo`;
 
     constructor(
         private tccdbus: TccDBusClientService,

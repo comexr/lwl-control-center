@@ -215,10 +215,10 @@ export class KeyboardBacklightListener extends DaemonListener {
         let iteKeyboardDevices: Array<string>;
 
         iteKeyboardDevices =
-            getSymbolicLinks("/sys/bus/hid/drivers/tuxedo-keyboard-ite")
-                .filter(name => fileOK("/sys/bus/hid/drivers/tuxedo-keyboard-ite/" + name + "/leds"));
+            getSymbolicLinks("/sys/bus/hid/drivers/lwl-keyboard-ite")
+                .filter(name => fileOK("/sys/bus/hid/drivers/lwl-keyboard-ite/" + name + "/leds"));
         for (const iteKeyboardDevice of iteKeyboardDevices) {
-            let path = "/sys/bus/hid/drivers/tuxedo-keyboard-ite/" + iteKeyboardDevice + "/leds"
+            let path = "/sys/bus/hid/drivers/lwl-keyboard-ite/" + iteKeyboardDevice + "/leds"
             if (fileOK(path)) {
                 ledsPerKey = ledsPerKey.concat(
                     getDirectories(path)

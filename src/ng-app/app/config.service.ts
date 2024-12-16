@@ -155,7 +155,7 @@ export class ConfigService implements OnDestroy {
         if (environment.production) {
             tccdExec = TccPaths.TCCD_EXEC_FILE;
         } else {
-            tccdExec = this.electron.process.cwd() + '/dist/tuxedo-control-center/data/service/tccd';
+            tccdExec = this.electron.process.cwd() + '/dist/lwl-control-center/data/service/tccd';
         }
 
         const result = this.electron.ipcRenderer.sendSync(
@@ -254,7 +254,7 @@ export class ConfigService implements OnDestroy {
         if (environment.production) {
             tccdExec = TccPaths.TCCD_EXEC_FILE;
         } else {
-            tccdExec = this.electron.process.cwd() + '/dist/tuxedo-control-center/data/service/tccd';
+            tccdExec = this.electron.process.cwd() + '/dist/lwl-control-center/data/service/tccd';
         }
         const result = this.electron.ipcRenderer.sendSync(
             'exec-cmd-sync', 'pkexec ' + tccdExec + ' --new_profiles ' + tmpProfilesPath
@@ -283,7 +283,7 @@ export class ConfigService implements OnDestroy {
         if (environment.production) {
             tccdExec = TccPaths.TCCD_EXEC_FILE;
         } else {
-            tccdExec = this.electron.process.cwd() + '/dist/tuxedo-control-center/data/service/tccd';
+            tccdExec = this.electron.process.cwd() + '/dist/lwl-control-center/data/service/tccd';
         }
         try {
             await this.utils.execFile('pkexec ' + tccdExec + ' --new_profiles ' + tmpProfilesPath);
@@ -348,7 +348,7 @@ export class ConfigService implements OnDestroy {
             if (environment.production) {
                 tccdExec = TccPaths.TCCD_EXEC_FILE;
             } else {
-                tccdExec = this.electron.process.cwd() + '/dist/tuxedo-control-center/data/service/tccd';
+                tccdExec = this.electron.process.cwd() + '/dist/lwl-control-center/data/service/tccd';
             }
 
             this.utils.execFile(
@@ -372,7 +372,7 @@ export class ConfigService implements OnDestroy {
             if (environment.production) {
                 tccdExec = TccPaths.TCCD_EXEC_FILE;
             } else {
-                tccdExec = this.electron.process.cwd() + '/dist/tuxedo-control-center/data/service/tccd';
+                tccdExec = this.electron.process.cwd() + '/dist/lwl-control-center/data/service/tccd';
             }
             this.utils.execFile(
                 'pkexec ' + tccdExec + ' --new_profiles ' + tmpProfilesPath + ' --new_settings ' + tmpSettingsPath

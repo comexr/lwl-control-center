@@ -21,7 +21,7 @@
             <allow_active>auth_admin_keep</allow_active>
         </defaults>
 
-        <annotate key="org.freedesktop.policykit.exec.path">/opt/tuxedo-control-center/resources/dist/tuxedo-control-center/data/service/tccd</annotate>
+        <annotate key="org.freedesktop.policykit.exec.path">/opt/lwl-control-center/resources/dist/lwl-control-center/data/service/tccd</annotate>
         <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
     </action>
 

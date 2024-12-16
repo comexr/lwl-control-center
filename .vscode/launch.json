@@ -11,11 +11,11 @@
               "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
             },
             "runtimeArgs": [
-                "./dist/tuxedo-control-center"
+                "./dist/lwl-control-center"
             ],
             "program": "${workspaceRoot}/src/e-app/main.ts",
             "outFiles": [
-                "${workspaceRoot}/dist/tuxedo-control-center/e-app/e-app/main.js"
+                "${workspaceRoot}/dist/lwl-control-center/e-app/e-app/main.js"
             ],
             "sourceMaps": true
         },
@@ -28,7 +28,7 @@
             "runtimeExecutable": "${workspaceRoot}/node_modules/.bin/electron.cmd"
             },
             "runtimeArgs": [
-                "${workspaceRoot}/dist/tuxedo-control-center"
+                "${workspaceRoot}/dist/lwl-control-center"
             ],
             "webRoot": "${workspaceRoot}/dist",
             "sourceMaps": true,

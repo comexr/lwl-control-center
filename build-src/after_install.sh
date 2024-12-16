@@ -4,13 +4,13 @@
 systemctl stop tuxedofancontrol > /dev/null 2>&1 || true
 systemctl disable tuxedofancontrol > /dev/null 2>&1 || true
 
-DIST_DATA=/opt/tuxedo-control-center/resources/dist/tuxedo-control-center/data/dist-data
+DIST_DATA=/opt/lwl-control-center/resources/dist/lwl-control-center/data/dist-data
 
-rm /usr/share/applications/tuxedo-control-center.desktop || true
-cp ${DIST_DATA}/tuxedo-control-center.desktop /usr/share/applications/tuxedo-control-center.desktop || true
+rm /usr/share/applications/lwl-control-center.desktop || true
+cp ${DIST_DATA}/lwl-control-center.desktop /usr/share/applications/lwl-control-center.desktop || true
 
 mkdir -p /etc/skel/.config/autostart || true
-cp ${DIST_DATA}/tuxedo-control-center-tray.desktop /etc/skel/.config/autostart/tuxedo-control-center-tray.desktop || true
+cp ${DIST_DATA}/lwl-control-center-tray.desktop /etc/skel/.config/autostart/lwl-control-center-tray.desktop || true
 
 cp ${DIST_DATA}/com.tuxedocomputers.tccd.policy /usr/share/polkit-1/actions/com.tuxedocomputers.tccd.policy || true
 cp ${DIST_DATA}/com.tuxedocomputers.tccd.conf /usr/share/dbus-1/system.d/com.tuxedocomputers.tccd.conf || true
@@ -31,10 +31,10 @@ udevadm control --reload-rules && udevadm trigger
 # ---
 # Original electron-builder after-install.tpl
 # ---
-ln -sf '/opt/tuxedo-control-center/tuxedo-control-center' '/usr/bin/tuxedo-control-center' || true
+ln -sf '/opt/lwl-control-center/lwl-control-center' '/usr/bin/lwl-control-center' || true
 
 # SUID chrome-sandbox for Electron 5+
-chmod 4755 '/opt/tuxedo-control-center/chrome-sandbox' || true
+chmod 4755 '/opt/lwl-control-center/chrome-sandbox' || true
 
 update-mime-database /usr/share/mime || true
 update-desktop-database /usr/share/applications || true

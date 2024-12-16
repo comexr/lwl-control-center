@@ -7,7 +7,7 @@
     <vendor>TUXEDO Computers GmbH</vendor>
     <vendor_url>https://www.tuxedocomputers.com/</vendor_url>
 
-    <action id="com.tuxedocomputers.tuxedo-tomte">
+    <action id="com.tuxedocomputers.lwl-tomte">
         <description>Run TUXEDO tomte</description>
         <description xml:lang="de">TUXEDO tomte ausführen</description>
         <message>Authentication is required to run TUXEDO tomte</message>
@@ -21,7 +21,7 @@
             <allow_active>auth_admin_keep</allow_active>
         </defaults>
 
-        <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/tuxedo-tomte</annotate>
+        <annotate key="org.freedesktop.policykit.exec.path">/usr/bin/lwl-tomte</annotate>
         <annotate key="org.freedesktop.policykit.exec.allow_gui">true</annotate>
     </action>
 

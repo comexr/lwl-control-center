@@ -5,7 +5,7 @@ import * as builder from 'electron-builder';
  */
 const buildSteps: Array<(filenameAddition: string) => Promise<void>> = [];
 
-const distSrc = './dist/tuxedo-control-center';
+const distSrc = './dist/lwl-control-center';
 
 /**
  * Parse command line parameter and set up the build
@@ -59,9 +59,9 @@ async function buildDeb(filenameAddition: string): Promise<void> {
             distSrc + '/data/CHANGELOG.md',
             distSrc + '/data/dist-data/tccd.service',
             distSrc + '/data/dist-data/tccd-sleep.service',
-            distSrc + '/data/dist-data/tuxedo-control-center_256.svg',
-            distSrc + '/data/dist-data/tuxedo-control-center.desktop',
-            distSrc + '/data/dist-data/tuxedo-control-center-tray.desktop',
+            distSrc + '/data/dist-data/lwl-control-center_256.svg',
+            distSrc + '/data/dist-data/lwl-control-center.desktop',
+            distSrc + '/data/dist-data/lwl-control-center-tray.desktop',
             distSrc + '/data/dist-data/com.tuxedocomputers.tccd.policy',
             distSrc + '/data/dist-data/com.tuxedocomputers.tccd.conf',
             distSrc + '/data/camera/cameractrls.py',
@@ -74,10 +74,10 @@ async function buildDeb(filenameAddition: string): Promise<void> {
                 'deb'
             ],
             category: 'System',
-            icon: distSrc + '/data/dist-data/tuxedo-control-center_256.svg',
+            icon: distSrc + '/data/dist-data/lwl-control-center_256.svg',
         },
         deb: {
-            depends: ['tuxedo-drivers (>= 4.0.0) | tuxedo-keyboard (>= 3.1.2)', 'libayatana-appindicator3-1'],
+            depends: ['lwl-drivers (>= 4.0.0) | lwl-keyboard (>= 3.1.2)', 'libayatana-appindicator3-1'],
             category: 'System',
             afterInstall: "./build-src/after_install.sh",
             afterRemove: "./build-src/after_remove.sh",
@@ -122,9 +122,9 @@ async function buildRpm(filenameAddition: string): Promise<void> {
             distSrc + '/data/service/TuxedoIOAPI.node',
             distSrc + '/data/dist-data/tccd.service',
             distSrc + '/data/dist-data/tccd-sleep.service',
-            distSrc + '/data/dist-data/tuxedo-control-center_256.svg',
-            distSrc + '/data/dist-data/tuxedo-control-center.desktop',
-            distSrc + '/data/dist-data/tuxedo-control-center-tray.desktop',
+            distSrc + '/data/dist-data/lwl-control-center_256.svg',
+            distSrc + '/data/dist-data/lwl-control-center.desktop',
+            distSrc + '/data/dist-data/lwl-control-center-tray.desktop',
             distSrc + '/data/dist-data/com.tuxedocomputers.tccd.policy',
             distSrc + '/data/dist-data/com.tuxedocomputers.tccd.conf',
             distSrc + '/data/camera/cameractrls.py',
@@ -136,10 +136,10 @@ async function buildRpm(filenameAddition: string): Promise<void> {
                 'rpm'
             ],
             category: 'System',
-            icon: distSrc + '/data/dist-data/tuxedo-control-center_256.svg',
+            icon: distSrc + '/data/dist-data/lwl-control-center_256.svg',
         },
         rpm: {
-            depends: ['(tuxedo-drivers >= 4.0.0 or tuxedo-keyboard >= 3.1.2)', '(libayatana-appindicator3-1 or libappindicator or libappindicator3-1)'],
+            depends: ['(lwl-drivers >= 4.0.0 or lwl-keyboard >= 3.1.2)', '(libayatana-appindicator3-1 or libappindicator or libappindicator3-1)'],
             afterInstall: './build-src/dummy.sh',
             afterRemove: './build-src/after_remove.sh',
             fpm: [

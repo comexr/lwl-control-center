@@ -1,18 +1,18 @@
 # TUXEDO Control Center
 
 The TUXEDO Control Center (short: TCC) gives TUXEDO laptop users full control over their hardware like CPU cores, fan speed and more. \
-To get a more detailed description of features, plans and the ideas behind please check our press release ([english](https://www.tuxedocomputers.com/en/Infos/News/Everything-under-control-with-the-TUXEDO-Control-Center.tuxedo) | [german](https://www.tuxedocomputers.com/de/Infos/News/Alles-unter-Kontrolle-mit-dem-TUXEDO-Control-Center_1.tuxedo)) and info pages ([english](https://www.tuxedocomputers.com/en/TUXEDO-Control-Center.tuxedo#) | [german](https://www.tuxedocomputers.com/de/TUXEDO-Control-Center.tuxedo)).
+To get a more detailed description of features, plans and the ideas behind please check our press release ([english](https://www.tuxedocomputers.com/en/Infos/News/Everything-under-control-with-the-lwl-Control-Center.tuxedo) | [german](https://www.tuxedocomputers.com/de/Infos/News/Alles-unter-Kontrolle-mit-dem-lwl-Control-Center_1.tuxedo)) and info pages ([english](https://www.tuxedocomputers.com/en/lwl-Control-Center.tuxedo#) | [german](https://www.tuxedocomputers.com/de/lwl-Control-Center.tuxedo)).
 
 ## Using it
 
-There are pre-build packages for Ubuntu 16.04/18.04/20.04 as well as openSUSE Leap 15.x and Tumbleweed available at our repositories. For details please have a look [over here](https://www.tuxedocomputers.com/en/Add-TUXEDO-software-package-sources.tuxedo).
+There are pre-build packages for Ubuntu 16.04/18.04/20.04 as well as openSUSE Leap 15.x and Tumbleweed available at our repositories. For details please have a look [over here](https://www.tuxedocomputers.com/en/Add-lwl-software-package-sources.tuxedo).
 
-Note: TCC depends on the `tuxedo-io` module from the `tuxedo-keyboard` package for some core functionality like fan control.
+Note: TCC depends on the `lwl-io` module from the `lwl-keyboard` package for some core functionality like fan control.
 
 ## Project structure
 
 ```
-tuxedo-control-center
+lwl-control-center
 |  README.md
 |--src
 |  |--ng-app            Angular GUI (aka electron renderer)
@@ -36,9 +36,9 @@ tuxedo-control-center
    ```
 2. Clone & install libraries
     ```
-    git clone https://github.com/tuxedocomputers/tuxedo-control-center
+    git clone https://github.com/tuxedocomputers/lwl-control-center
 
-    cd tuxedo-control-center
+    cd lwl-control-center
 
     npm install
     ```
@@ -48,7 +48,7 @@ tuxedo-control-center
    
    Manual instructions:
    1. Copy `tccd.service` and `tccd-sleep.service` (from src/dist-data) to `/etc/systemd/system/`
-   2. Edit the `tccd.service` (exec start/stop) to point to `<dev path>/dist/tuxedo-control-center/data/service/tccd`.
+   2. Edit the `tccd.service` (exec start/stop) to point to `<dev path>/dist/lwl-control-center/data/service/tccd`.
    3. Copy `com.tuxedocomputers.tccd.conf` to `/usr/share/dbus-1/system.d/`
    4. Start service `systemctl start tccd`. (And enable for autostart `systemctl enable tccd tccd-sleep`)
 

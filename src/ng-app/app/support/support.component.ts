@@ -39,7 +39,7 @@ export class SupportComponent implements OnInit {
 
   public anydeskProgramName = 'anydesk';
   public anydeskInstalled: boolean;
-  public webFAICreatorProgramName = 'tuxedo-webfai-creator';
+  public webFAICreatorProgramName = 'lwl-webfai-creator';
   public webFAICreatorInstalled: boolean;
 
   public formTicketNumber: FormGroup;

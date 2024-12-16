@@ -40,8 +40,8 @@
     @include tcc-color-picker-theme($theme);
 }
 
-@import './themes/tuxedo-light-theme.scss';
-@import './themes/tuxedo-dark-theme.scss';
+@import './themes/lwl-light-theme.scss';
+@import './themes/lwl-dark-theme.scss';
 
 [hidden] {
     visibility: hidden !important;

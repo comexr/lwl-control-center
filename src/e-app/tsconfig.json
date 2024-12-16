@@ -1,7 +1,7 @@
 {
   "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "outDir": "../../dist/tuxedo-control-center/e-app",
+    "outDir": "../../dist/lwl-control-center/e-app",
     "rootDir": "../",
     "module": "commonjs",
     "types": ["node"],
