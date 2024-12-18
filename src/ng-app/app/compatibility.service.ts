@@ -78,6 +78,7 @@ export class CompatibilityService {
                              deviceName === "IBP1XI08MK1" ||
                              deviceName === "IBP14I08MK2" ||
                              deviceName === "IBP16I08MK2" ||
+                             deviceName === "0001" || // /sys/class/dmi/id/product_sku of GX5MRXG
                              deviceName === "IBP14A09MK1 / IBP15A09MK1";
     }
 
