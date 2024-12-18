@@ -207,7 +207,7 @@ export class CompatibilityService {
     if (boardName === "GMxRGxx") {
       return false;
     }*/
-        //return this.tccDbus.fanData.value.cpu.temp.data.value > 1;
+        // return this.tccDbus.fanData.value.cpu.temp.data.value > 1;
         return true;
     }
 

@@ -662,7 +662,8 @@ export class FanControlWorker extends DaemonWorker {
         if (boardName === "GMxRGxx") {
             return false;
         }*/
-        return this.tccd.settings.fanControlEnabled;
+        // return this.tccd.settings.fanControlEnabled;
+        return true;
     }
 }
 
