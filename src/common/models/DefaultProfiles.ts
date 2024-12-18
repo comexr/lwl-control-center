@@ -420,6 +420,7 @@ export enum TUXEDODevice {
     STELLARIS17I06,
     SIRIUS1601,
     SIRIUS1602,
+    GX5MRXG,
 };
 
 /*
@@ -452,6 +453,8 @@ deviceProfiles.set(TUXEDODevice.STELLARIS1XA05, [ maxEnergySave, silent, office,
 deviceProfiles.set(TUXEDODevice.STELLARIS16I06, [ maxEnergySave, silent, office, highPerformance ]);
 deviceProfiles.set(TUXEDODevice.STELLARIS17I06, [ maxEnergySave, silent, office, highPerformance ]);
 
+deviceProfiles.set(TUXEDODevice.GX5MRXG, [ maxEnergySave, silent, office ]);
+
 export const deviceCustomProfiles: Map<TUXEDODevice, ITccProfile[]> = new Map();
 
 // Devices not listed here default to [ defaultCustomProfile ].
@@ -462,3 +465,5 @@ deviceCustomProfiles.set(TUXEDODevice.AURA15G3, [ defaultCustomProfile, defaultM
 deviceCustomProfiles.set(TUXEDODevice.POLARIS1XA02, [ defaultCustomProfile25WcTGP ]);
 deviceCustomProfiles.set(TUXEDODevice.POLARIS1XA03, [ defaultCustomProfile25WcTGP ]);
 deviceCustomProfiles.set(TUXEDODevice.STELLARIS1XA03, [ defaultCustomProfile25WcTGP ]);
+
+deviceCustomProfiles.set(TUXEDODevice.GX5MRXG, [ defaultCustomProfile, defaultMobileCustomProfileTDP ]);
