@@ -46,11 +46,11 @@ export class CompatibilityService {
         let showAquarisMenu;
         const isTuxedo =
             (boardVendor !== undefined &&
-                boardVendor.toLowerCase().includes("tuxedo")) ||
+                boardVendor.toLowerCase().includes("TongFang")) ||
             (chassisVendor !== undefined &&
-                chassisVendor.toLowerCase().includes("tuxedo")) ||
+                chassisVendor.toLowerCase().includes("Standard")) ||
             (sysVendor !== undefined &&
-                sysVendor.toLowerCase().includes("tuxedo"));
+                sysVendor.toLowerCase().includes("TongFang"));
 
         if (isTuxedo) {
             if (
